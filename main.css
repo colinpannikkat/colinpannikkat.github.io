@@ -1,0 +1,136 @@
+/* Reset default styles */
+body,
+h1,
+p {
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+/* Set default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsla(102, 27%, 31%, 0.192);
+    margin: 0 10%;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+/* Style the main content */
+main {
+    margin: 2% 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 5%;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+/* Style links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    padding: 1rem 0;
+}
+
+/* Style the navigation bar */
+nav#head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+/* Style the navigation buttons */
+nav#head a {
+    background-color: #444;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    padding: 2% 0;
+    text-align: center;
+}
+
+nav#head a:hover {
+    background-color: #777;
+}
+
+nav#local {
+    padding: 0;
+    margin: 0;
+}
+
+nav#local ul {
+    list-style-type: none;
+    padding-left: 1em;
+    margin: 0;
+}
+
+nav#local a {
+    color: black;
+}
+
+footer {
+    margin: 2% 0;
+    align-self: start;
+}
+
+.pdf-container {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+}
+
+object#resume {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0 0%;
+    }
+
+    main {
+        padding: 0 5%;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav#head {
+        flex-direction: column;
+    }
+
+    nav#head a {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    footer {
+        padding: 0 5%;
+    }
+}
