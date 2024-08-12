@@ -30,6 +30,10 @@ header {
     width: 100%;
 }
 
+header h1 a img {
+    vertical-align: middle;
+}
+
 /* Style links */
 a {
     text-decoration: none;
