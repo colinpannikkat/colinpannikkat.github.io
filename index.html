@@ -9,17 +9,22 @@
 </head>
 <body>
     <header>
-        <h1>Colin Pannikkat
-            <a href="https://linkedin.com/in/colinpannikkat"><img src="linkedin.png" alt="Linkedin" width="35px"></a>
-            <a href="https://github.com/colinpannikkat"><img src="github.png" alt="Github" width="35px"></a>
-        </h1>
+        <div class="wrapper">
+            <h1>Colin Pannikkat
+                <a href="https://linkedin.com/in/colinpannikkat"><img src="linkedin.png" alt="Linkedin" width="35px"></a>
+                <a href="https://github.com/colinpannikkat"><img src="github.png" alt="Github" width="35px"></a>
+            </h1>
+            <h3>CS, Math, and Econ Student @ Oregon State University</h3>
+        </div>
     </header>
     <nav id="head">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="writing.html">Writing</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <div class="wrapper">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <!-- <a href="writing.html">Writing</a> -->
+            <!-- <a href="projects.html">Projects</a> -->
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
     <main>
         <nav id="local">
@@ -34,10 +39,13 @@
                     <a href="#experience">Experience</a>
                     <ul>
                         <li>
-                            <a href="#zabble">Zabble</a>
+                            <a href="#bpp">FEL</a>
                         </li>
                         <li>
                             <a href="#si">SI</a>
+                        </li>
+                        <li>
+                            <a href="#zabble">Zabble</a>
                         </li>
                         <li>
                             <a href="#sail">SAIL</a>
@@ -61,7 +69,7 @@
                     and Economics.
                 </p>
                 <p>
-                    In my freetime, I cook, play guitar, boulder, bike,
+                    In my freetime, I cook, play guitar, boulder, bike, binge tv shows,
                     and read. I would consider myself a jack of all trades, master of none, and the non-exhaustive 
                     list of my other on-and-off hobbies include:
                 </p>
@@ -84,33 +92,34 @@
         <section>
             <h2 id="projects">Projects</h2>
             <article>
-                You can find some of the projects I have worked on <a href="projects.html">here</a>.
+                You can find some of the projects I have worked on my Github <a href="https://github.com/colinpannikkat">here</a>.
             </article>
         </section>
         <section>
             <h2 id="experience">Experience</h2>
             <article>
-                <h3 id="zabble"> Zabble Inc.</h3>
+                <h3 id="bpp">Forest Ecophysiology Lab (2024 - Present)</h3>
                 <p>
-                    Most recently, I accepted a position as a QC/QA Intern for Zabble, a waste monitoring SaaS platform for hospitals, 
-                    large organizations, universities, and cities. Within Zabble I product test the Zabble Zero platform, developing
-                    and reproting my testing methods and results in written reports detailing any improvements or issues found. I
-                    conduct pre-release testing, qualitative testing of any new computer vision model upgrades, and also provide planning
-                    for future improvements and testing to the platform.
+                    After leaving SAIL, I was eager to begin more research and explore different research areas at the crossroads of computer science
+                    and other disciplines in the environmental field. I had been interested in computational ecology for a while, and found the <a href="https://forestecophys.com/">Forest 
+                    Ecophysiology Lab</a> during my search for research opportunities. In this lab, underneath Professor German Vargas Gutiérrez, I have been
+                    tasked with utilizing and improving an existing process-based mechanistic model of stomatal optimization 
+                    (<a href="https://sperry.biology.utah.edu/publications/Sperry_et_al_2017_PCE.pdf">Sperry et al. 2017</a>), and will be
+                    assisting with a scientific evaluation of the model's predictive performance with respect to real world data collected on Populus fremontii 
+                    (Fremont Cottonwood) in high-stress drought conditions.
                 </p>
                 <p>
-                    Although I never expected to do QA/QC, it has matched my abilities quite well. The whole idea of my role is to break their system,
-                    and figure out any issues or improvements, and in that I consider myself quite adept. It is a pleasure to work in such a small company,
-                    and one dedicated to solving such a big sustainability issue that is overlooked by many, waste!
+                    This is my first interaction with Ecological process-based modeling, and I am quite excited to continue my work in the lab and gain more familiarity
+                    within the field.
                 </p>
             </article>
             <article>
-                <h3 id="si">Supplemental Instruction</h3>
+                <h3 id="si">Supplemental Instruction (2023 - Present)</h3>
                 <p>
-                    I began working as a Supplemental Instruction Leader in the Fall of 2023. Within this position, I follow the practices of
+                    I began working as a <b>Supplemental Instruction Leader</b> in the Fall of 2023. Within this position, I follow the practices of
                     SI to plan and lead multiple study tables per week as supplemental support for the ECON201 course, Intro to Microeconomics.
-                    In tables, I implement best practices of collaborative peer led learning, and synthesize relevant course content based on course
-                    lectures. I also run review sessions for >100 students, and sometimes office hours to provide extra support outside of tables.
+                    In tables, I implement best practices of collaborative peer-led learning, and synthesize relevant course content based on course
+                    lectures. I also facilitate review sessions for >100 students, and sometimes office hours to provide extra support outside of tables.
                 </p>
                 <p>
                     Economics is not a widely liked subject, and so it brings me great utility and worth to transform student's preconceptions of
@@ -121,10 +130,26 @@
                 </p>
             </article>
             <article>
-                <h3 id="sail">SAIL</h3>
+                <h3 id="zabble"> Zabble Inc. (2024)</h3>
+                <p>
+                    Over the 2024 summer I worked as a <b>QC/QA Intern</b> for Zabble, a waste monitoring SaaS platform for hospitals, 
+                    large organizations, universities, and cities. Within Zabble, I developed tests for the Zabble Zero platform,
+                    and reported my testing methods and results in written technical reports detailing any improvements or issues found. I also
+                    conducted pre-release testing, qualitative testing of any new computer vision model upgrades, and also provided ideas
+                    for future improvements and testing to the platform. My final project in the role was a data partitioning project using
+                    AWS Glue and the Boto3 AWS Python SDK to reduce the AWS Athena querying costs associated with updating their Quicksight dashboards.
+                </p>
+                <p>
+                    Although I never expected to do QA/QC, it matched my abilities quite well. The whole idea of my role was to break their system,
+                    and figure out any issues or improvements, and in that I consider myself quite adept. It is a pleasure to work in such a small company,
+                    and one dedicated to solving such a big sustainability issue that is overlooked by many, waste!
+                </p>
+            </article>
+            <article>
+                <h3 id="sail">SAIL (2022 - 2024)</h3>
                 <p>
                     For two-years, I was given the opportunity to work underneath <a href="https://sanghyun-hong.com/">Sanghyun Hong</a>
-                    in the Secure AI Systems Lab (SAIL). While working in this lab I was introduced to security and privacy issues in the AI
+                    in the Secure AI Systems Lab (SAIL) as an <b>undergraduate researcher</b>. While working in this lab I was introduced to security and privacy issues in the AI
                     domain, including adversarial robustness, evaluation and generation of adversarial perturbations in NLP, adversarial 
                     jailbreaking of LLMs, and evaluation of bias detection methods for LLMs.
                 </p>
@@ -135,9 +160,9 @@
                 </p>
             </article>
             <article>
-                <h3 id="cob">Oregon State University's College of Business</h3>
+                <h3 id="cob">Oregon State University's College of Business (2024)</h3>
                 <p>
-                    Over the 2024 Spring term, I worked as a software backend engineer in a team of 6 to plan and develop a 
+                    Over the 2024 Spring term, I worked as a <b>software backend engineer</b> in a team of 6 to plan and develop a 
                     proof-of-concept chatbot for the College of Business to provide freshman COB students a tool to ask questions, 
                     and gain class, assignment, and advising support instantly without having to go through a human advisor. In the project,
                     we implemented a Retrieval-Augmented Generation (RAG) LLM pipeline using LlamaIndex and ChromaDB for
@@ -194,7 +219,7 @@
                 </ul>
             </article>
             <article>
-                <h3>Classes Taken (all at OSU)</h3>
+                <h3>Relevant Classes Taken (all at OSU)</h3>
                 <ul>
                     <li>CS162: Intro to CS II</li>
                     <li>CS261: Data Structures</li>
@@ -202,8 +227,11 @@
                     <li>CS271: Computer Architecture and Assembly</li>
                     <li>CS374: Operating Systems I</li>
                     <li>CS290: Web Development</li>
+                    <li>CS574: Operating Systems II (current)</li>
+                    <li>AI534: Machine Learning (current)</li>
                     <li>ST421: Introduction to Mathematical Statistics</li>
                     <li>ST314: Introduction to Statistics for Engineers</li>
+                    <li>ECON499: Causal Inference (current)</li>
                     <li>MTH231: Discrete Math</li>
                     <li>MTH254: Vector Calc I</li>
                     <li>MTH341: Linear Algebra I</li>
